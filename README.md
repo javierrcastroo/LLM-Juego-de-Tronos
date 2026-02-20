@@ -17,7 +17,7 @@ Pipeline RAG para responder preguntas sobre **Juego de Tronos (Libro 1)** y gene
 2. Crear chunks y guardarlos en parquet.
 3. Indexar con FAISS + reranking.
 4. Responder pregunta con contexto recuperado.
-5. Generar JSON de escena **genérico** (sin hardcode por tipo de pregunta).
+5. Generar JSON de escena **genérico** (sin hardcode por tipo de pregunta), con recuperación robusta y fallback si el LLM no devuelve JSON perfecto.
 6. Convertir ese JSON en prompt de imagen y renderizar con SD3.5.
 
 ## Nota de hardware
