@@ -10,7 +10,7 @@ Pipeline RAG para responder preguntas sobre **Juego de Tronos (Libro 1)** y gene
 
 ## Archivos clave
 - `got_rag_image_pipeline.py`: lógica principal (ingesta EPUB, chunking, retrieval, respuesta, planificación de escena y render de imagen).
-- `llm.ipynb`: notebook simplificado para ejecutar el flujo en Colab.
+- `llm.ipynb`: notebook autocontenido para ejecutar todo el flujo en Colab (sin depender de archivos `.py`).
 
 ## Flujo
 1. Extraer capítulos desde el EPUB.
