@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.env.neo4j
+graph_rag_data/neo4j/
