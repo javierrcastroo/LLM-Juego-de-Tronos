@@ -22,6 +22,7 @@ Pipeline RAG para responder preguntas sobre **Juego de Tronos (Libro 1)** y gene
 6. **Planner de escena robusto** (parser JSON tolerante + retry fixer + fallback determinista).
 7. **Prompt visual avanzado** (estilo, atmósfera, paleta, cámara, props, negatives fuertes).
 8. **Generación multi-seed** y selección de la mejor imagen por **score CLIP texto-imagen**.
+9. **Control de longitud del prompt** (budget de palabras) + `visual_brief` para capturar esencia visual sin pasarse de tokens.
 
 ## Flujo
 EPUB -> capítulos -> chunks -> embeddings/BM25 -> retrieval híbrido + rerank + MMR -> QA -> verificación -> planner escena -> prompt -> SD3.5 multi-seed -> ranking CLIP -> imagen final.
