@@ -1,4 +1,5 @@
 __pycache__/
 *.pyc
-.env.neo4j
-graph_rag_data/neo4j/
+
+# Colab / local generated artifacts
+rag_knowledge_base/
