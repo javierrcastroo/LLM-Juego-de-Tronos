@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+# Colab / local generated artifacts
+rag_knowledge_base/
