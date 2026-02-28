@@ -1,12 +1,13 @@
 # LLM-Juego-de-Tronos
 
-Pipeline RAG para responder preguntas sobre **Juego de Tronos (Libro 1)** y generar una imagen de la escena usando modelos de Hugging Face.
+Pipeline RAG para responder preguntas sobre **Juego de Tronos (Libro 1)** y generar imágenes de escenas con modelos de Hugging Face.
 
 ## Modelos configurados
 - **LLM (QA + planificación de escena)**: `Qwen/Qwen3-30B-A3B-Thinking-2507-FP8`
 - **Embeddings (pipeline principal)**: `BAAI/bge-m3`
 - **Reranker**: `BAAI/bge-reranker-large`
-- **Generación de imagen**: `stabilityai/stable-diffusion-3.5-large`
+- **Imagen**: `stabilityai/stable-diffusion-3.5-large`
+- **Selección automática de mejor imagen**: `openai/clip-vit-large-patch14`
 
 ## Archivos clave
 - `got_rag_image_pipeline.py`: lógica principal (ingesta EPUB, chunking, retrieval, respuesta, planificación de escena y render de imagen).
